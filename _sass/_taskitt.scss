@@ -7,23 +7,23 @@
 @font-face{
   font-family:"proxima-nova";
   src: url("/fonts/Proxima-Nova-Alt-Semibold.otf") format("opentype");
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face{
   font-family:"proxima-nova";
   src: url("/fonts/Proxima-Nova-Alt-Bold.otf") format("opentype");
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
 
 h1 {
-  font-weight: 300;
+  font-weight: 600;
   font-size: 48px;
   line-height: 1em;
 }
 h2 {
-  font-weight: 200;
+  font-weight: 400;
   font-size: 18px;
 }
 
