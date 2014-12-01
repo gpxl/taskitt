@@ -17,29 +17,43 @@
   font-style: normal;
 }
 
+a {
+  color: darken($brand-color,30);
+}
+a:hover {
+  color: darken($brand-color,50);
+}
 h1 {
   font-weight: 600;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 1em;
 }
 h2 {
   font-weight: 400;
   font-size: 18px;
+  line-height: 1.2em;
+  small {
+    font-size: 77%;
+    color: lighten($text-color,10);
+    font-weight: 200;
+  }
 }
 
 .btn-lg {
   box-shadow: 0 2px 1px #999;
 }
 #hero {
-  height: 294px;
+  position: relative;
+  min-height: 294px;
   margin-bottom: 5em;
+  padding-bottom: 2em;
   &:before {
     content: '';
     position: absolute;
     top:0;
     z-index: 1;
     width: 100%;
-    height: 294px;
+    height: 100%;
     background: url('/images/hero.jpg');
     background-size: cover;
     background-position: center;
@@ -50,24 +64,29 @@ h2 {
     top:0;
     z-index: 2;
     width: 100%;
-    height: 294px;
+    height: 100%;
     background: #fff;
     opacity: 0.6;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 20px;
   }
   #hero-link {
     width: 100%;
     position: absolute;
     z-index: 5;
-    top: 272px;
-
+    bottom: -1.3em;
   }
   .container {
     position: relative;
     z-index: 3;
   }
   #logo {
-    padding-top: 2.6em;
-    height: 6.2em;
+    padding-top: 1.6em;
+    height: 5.2em;
     width: 7em;
     .fa-check {
       color: $brand-color;
@@ -86,23 +105,27 @@ h2 {
 .fa-2x {
   color: $brand-color;
   font-size: 4em;
+  margin-bottom: 0.3em;
 }
 .two-column {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
 }
+$answer-height:450px;
+
 #answer{
   position: relative;
-  height: 334px;
+  min-height: $answer-height;
   margin-top: 5em;
+  padding-bottom: 4em;
   &:before {
     content: '';
     position: absolute;
     top:0;
     z-index: 1;
     width: 100%;
-    height: 334px;
+    height: 100%;
     background: url('/images/answers.jpg');
     background-size: cover;
     background-position: center;
@@ -113,15 +136,15 @@ h2 {
     top:0;
     z-index: 2;
     width: 100%;
-    height: 334px;
+    height: 100%;
     background: #000;
-    opacity: 0.6;
+    opacity: 0.8;
   }
   #answer-link {
     width: 100%;
     position: absolute;
     z-index: 5;
-    top: 310px;
+    bottom: -1.3em;
 
   }
   .container {
@@ -153,18 +176,19 @@ h2 {
 #testimonials {
   margin-top: 5em;
   .testimonial {
+    margin-bottom: 4em;
     position: relative;
+    img {
+      float:left;
+      margin-right: 1em;
+      width: 75px;
+      height: 75px;
+      border-radius: 4em;
+    }
     p {
       position: relative;
-      .fa-quote-left {
-        position: absolute;
-        top: 0;
-        left: -1.5em;
-      }
-      .fa-quote-right {
-        position: absolute;
-        bottom: 0;
-        right: -1em;
+      .fa-quote-left, .fa-quote-right {
+        color: darken($brand-color,30);
       }
     }
   }
@@ -176,6 +200,7 @@ h2 {
     width: 75px;
     height: 75px;
     border-radius: 4em;
+    margin-bottom: 1em;
   }
 }
 
