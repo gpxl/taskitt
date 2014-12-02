@@ -1,7 +1,7 @@
 # Site settings
-title: "Taskitt: Unlimited website support and small jobs for $99/mo."
+title: "Taskitt"
 email: gerlando@gmail.com
-description: ""
+description: "Unlimited website consulting and support for $99/mo."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.taskitt.com" # the base hostname & protocol for your site
 twitter_username: gpxl
